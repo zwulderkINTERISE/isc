@@ -1,0 +1,14 @@
+---
+title: "Instructor Support Coach Report Card"
+output: html_document
+---
+<br>
+```{r plot1, echo=FALSE, results='hide',fig.keep='all', message=FALSE, warning=FALSE,results='asis'}
+#knitr::opts_chunk$set(cache.lazy = TRUE)
+#print(plot_list)
+for(i in 1:length(plot_list)){
+ cat("<br><h4><b>", questions_plot$clean[i], "</b></h4>\n")
+ print(plot_list[i][[1]])
+ cat("\n\n")
+}
+```
