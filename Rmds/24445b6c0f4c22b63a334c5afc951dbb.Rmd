@@ -2,11 +2,11 @@
 title: "Instructor Tracking"
 output: html_document
 ---
-<br>
 ```{r date range, echo=FALSE, results='asis'}
 #Sys.date()-14 to Sys.date()
+cat(paste0("<h3>", format(Sys.Date()-14, "%B %d, %Y"), " to ", format(Sys.Date(), "%B %d, %Y"), "</h3>"))
+cat("\n")
 ```
-
 
 ```{r plot1, echo=FALSE, results='hide',fig.keep='all', message=FALSE, warning=FALSE,results='asis'}
 #knitr::opts_chunk$set(cache.lazy = TRUE)
