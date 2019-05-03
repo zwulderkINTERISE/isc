@@ -1,5 +1,5 @@
 ---
-title: "Mary Marshall Instructor Support Group Data"
+title: "Mary Instructor Support Group Data"
 output: html_document
 ---
 ```{r date range, echo=FALSE, results='asis'}
