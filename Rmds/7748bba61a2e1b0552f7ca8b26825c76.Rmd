@@ -1,10 +1,10 @@
 ---
-title: "Instructor Tracking"
+title: "Mary Marshall Instructor Support Group Data"
 output: html_document
 ---
 ```{r date range, echo=FALSE, results='asis'}
 #Sys.date()-14 to Sys.date()
-cat(paste0("<h3>", format(Sys.Date()-14, "%B %d, %Y"), " to ", format(Sys.Date(), "%B %d, %Y"), "</h3>"))
+cat(paste0("<h3><b>", format(Sys.Date()-14, "%B %d, %Y"), " to ", format(Sys.Date(), "%B %d, %Y"), "</b></h3>"))
 cat("\n")
 ```
 
@@ -12,7 +12,7 @@ cat("\n")
 #knitr::opts_chunk$set(cache.lazy = TRUE)
 #print(plot_list)
 for(i in 1:length(plot_list)){
- cat("<br><h4><b>", questions_plot$clean[i], "</b></h4>\n")
+ cat("<br><h3>", session_header$session_header[i],"</h3>", "<br><h4><b>", questions_plot$clean[i], "</b></h4>\n")
  print(plot_list[i][[1]])
  cat("\n\n")
 }
